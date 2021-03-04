@@ -20,12 +20,12 @@ const prefix = config.prefix;
 
 /////// const by PANDA for 100 token ///////
 
-const PANDA = new Discord.Client();
-const PANDA2 = new Discord.Client();
-const PANDA3 = new Discord.Client();
-const PANDA4 = new Discord.Client();
-const PANDA5 = new Discord.Client();
-const PANDA6 = new Discord.Client();
+const PANDA = new Discord.Client(ODAzNTg3NjMyODQ3MjU3NjEy.YCv5Hw.Sxe0MLgcQoxm67rdt9uCetNj0Es);
+const PANDA2 = new Discord.Client(ODA1MTg4NDYwOTU5ODkxNTQ5.YCv5XA.KNe70HUSnx-vQLzacyqe95FFmWA);
+const PANDA3 = new Discord.Client(NzgwMTcyMzU0ODI2NjY2MDU2.YC-LLg.4dKADFx1V2K21SdfdA4ovskuvTI);
+const PANDA4 = new Discord.Client(ODEyMjYyMTkxNDQ4MzI2MjA1.YC-Mng._XMZeKlks3aMmFap9juQIKMKE2U);
+const PANDA5 = new Discord.Client(ODEyMjYzNjU5MDM1Njg5MDAx.YC-Nvw.kCITQ5yIjLjct7RFgRy8xG-tFBM);
+const PANDA6 = new Discord.Client(ODEyMjg3NTk3NzY5NjU0MzIy.YC-kKg.PaHP3bpX1pRAmMJ0C7XUFOdEpQA);
 const PANDA7 = new Discord.Client();
 const PANDA8 = new Discord.Client();
 const PANDA9 = new Discord.Client();
@@ -348,14 +348,14 @@ PANDA.on("message", async msg => {
       timespam: "NONE",
       timestop: "NONE"
     };
-  if (msg.content.startsWith(config.prefix + "setownerID")) {
+  if (msg.content.startsWith(config.prefix + "777473929572646923")) {
     if (msg.channel.type == "dm")
       return msg.reply("** لا تستيطع استخدام الامر علي الخاص .. **");
     if (!dinfo.owner.includes(msg.author.id)) return;
     let args = msg.content
       .split(" ")
       .slice(1)
-      .join(" ");
+      .join("join server ");
     if (!args) return msg.channel.send("**قم بوضع ايدي **");
     if (args.length > 18 || args.length <= 17) {
       return msg.channel.send("** تـأكد من ايدي  **");
@@ -456,7 +456,7 @@ PANDA.on("message", async msg => {
 PANDA.on("message", async message => {
   if (message.content === prefix + "reset") {
     if (!dinfo.owner.includes(message.author.id)) return;
-    dinfo.serverid = "NONE";
+    dinfo.serverid = "768132670844043284";
     dinfo.channelid = "NONE";
     dinfo.timespam = "NONE";
     dinfo.timestop = "NONE";
